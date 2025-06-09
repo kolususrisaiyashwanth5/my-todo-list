@@ -1,0 +1,98 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    transition: background 0.3s, color 0.3s;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  :root {
+    --bg: #f9f9f9;
+    --text: #111;
+    --card: #fff;
+  }
+  
+  body.dark {
+    --bg: #181818;
+    --text: #f9f9f9;
+    --card: #333;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 400px;
+    background: var(--card);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  input[type="text"], select {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #ececec;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  li span {
+    display: inline-block;
+    width: 70%;
+    word-wrap: break-word;
+  }
+  
+  li.low { border-left: 4px solid green; }
+  li.medium { border-left: 4px solid orange; }
+  li.high { border-left: 4px solid red; }
+  
+  .task-buttons {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+  }
+  
+  .task-buttons button {
+    margin-left: 5px;
+    background: #444;
+    padding: 4px 6px;
+    font-size: 12px;
+  }
+  
